@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap'); /*FONTE DO GOOGLE*/
+
+:root { /*Variáveis (TAGS PARA FACILITAR) como se fosse legenda*/
+    --primary: #d85dfe;      /*AO inves de colocar o codigo da cor, coloca o nome que ta depois do --*/
+    --primary-darker: #6d1179;
+    --bg: #dde2e4fb;
+    --white: #fff;
+    --profile-bg: #f8f8f2b2;
+    --socials-bg: #e0e7f594; 
+    --highlight-bg: #f9fafcc7; 
+    --text-bg: #878789; 
+    --text: #797C83;
+    --border-color: #f4f4f4; 
+    --social-color: #6b6c6e;
+    --active: #7774b5; 
+    --tab-bg: #ebe9ff;
+    --tabs-border: #f2f6f5;
+    --tab-width: 7rem;
+    --tabs-gap: 0rem;
+    --tab-radius: 0.4rem;
+    --scrollbar-thumb: #e4e3f3; 
+    --scrollbar-bg: #f2f6f5;
+    --fonte-padrão: 'Manrope'
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 1px solid var(--primary);
+    outline-offset: 0;
+}
+*::selection {
+    background: var(--primary);
+    color: var(--white);
+}
+*::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--scrollbar-bg);
+    border-radius: 9.99rem;
+}
+*::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 9.99rem;
+}
+body {
+    font-family: var(--fonte-padrão),sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    user-select: none;
+}
+.perfil {
+    background: var(--profile-bg);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    width: 100%;
+    max-width: 28rem;
+    min-width: 20rem;
+    margin: 0 auto;
+    gap: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.destaque_perfil_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.8rem;
+    width: 100%;
+    flex-grow: 1;
+}
+.destaque_perfil {
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    background: var(--highlight-bg);
+    border: 1px solid var(--border-color);
+}
+.cabeçalho_perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    gap: 0.75rem;
+}
+.nome_perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.25rem;
+}
+.nome_perfil h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 0.5rem;
+}
+.nome_perfil p {
+    font-size: 1.05rem;
+    color: var(--text-bg);
+}
+.avatar {
+    flex-grow: 3;
+    max-width: 8rem;
+    min-width: 5rem;
+}
+.avatar img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: -50%;
+    border: 4px solid var(--profile-bg);
+}
+.rede_social {
+    display: flex;
+    margin: 0.5rem auto 1rem auto;
+    width: 100%;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.rede_social a {
+    background: var(--socials-bg);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid var(--border-color);
+    color: var(--social-color);
+    transition: all 0.3s;
+}
+.rede_social a img {
+    width: 100%;
+    height: 100%;
+}
