@@ -7,39 +7,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="perfil">
-        <header class="cabeçalho_perfil">
-            <div class="destaque_perfil_1">
-                <div class="destaque_perfil"> <!--Icone estudo--> 1760 </div> 
+    <div class="profile"> <!--PERFIL-->
+        <header class="profile_header"> <!--cabeçalho perfil-->
+            <div class="porfile-highlight_wrapper"> <!--destaque perfil-->
+                <div class="profile_highlight"> <!--Icone estudo-->  1760 </div> 
                 Estudante
             </div>
-            <div class="avatar">
+            <div class="profile_avatar">
                 <img src="imagens/perfil.jpeg" loading="lazy" alt="foto_perfil">
             </div>
+
         </header>
-        <div class="nome_perfil">
+
+        <div class="profile_name">
             <h2>Caról Sôusa <img src="imagens/verificado.png" alt="Verificado"></h2>
             <p>Desenvolvedora Frontend</p>
         </div>
-        <ul class="rede_social">
-            <li> <a href="#"> Instagram <img src="imagens/insta.png" alt="Logo Instagram"></a> </li>
-            <li> <a href="#"> Whatsapp <img src="imagens/whatsapp.png" alt="Logo Whatsapp"></a> </li>
-            <li> <a href="#">Github <img src="imagens/git.png" alt="Logo Git"></a>
+
+        <ul class="social_links">
+            <li class="instagram"> <a href="#"> <img src="imagens/insta.png" alt="Logo Instagram"></a> </li>
+            <li class="whatsapp"> <a href="#"> <img src="imagens/whatsapp.png" alt="Logo Whatsapp"></a> </li>
+            <li> <a href="#"><img src="imagens/git.png" alt="Logo Git"></a>
             </li>
         </ul>
+        
         <main>
-            <div class="abas">
-                <ul class="abas_">
-                    <li class="clicaveis">
-                        <a href="#about">Sobre mim</a>
-                        <a href="#qualificações"> Qualificações</a>
+            <div class="tabs_wrapper">
+                <ul class="tabs">
+                    <li class="active">
+                        <a id="tabl" href="#about">Sobre mim</a>
                     </li>
-                </ul>
+                    <li>
+                        <a id="tabl" href="#qualificações"> Qualificações</a>
+                    </li>
+                    <li>
+                        <a id="tabl" href="#depo">Depoimentos</a>
+                    </li>
+                    <li id="active_bg"></li>
+                </ul>   
             </div>
-            <div id="conteudo clicaveis" class="conteudo_about"> xxxxxxxxxxxxxxxxxxxxxxxxx</div>
-            <div class="conteudo_qualificações"> xxxxxxxxxxxxxxxxxxxxxx</div>
+
+            <div id="tabl_content" class="tab_content tab_content_active"> xxxxxxxxxxxxxxxxxxxxxxxxx</div>
+            <div id="tab_content" class="tab_content tab_content_active"> xxxxxxxxxxxxxxxxxxxxxx</div>
+            <div id="tab_content" class="tab_content tab_content_active">xxxxxxxxxxxxxxxxxxxxxx</div>
         </main>
-        <a href="#" class="contato">ENTRE EM CONTATO</a>
+        <a href="#" class="btn btn_primary">ENTRE EM CONTATO</a>
     </div>
     <script src="script.js"></script>
 
